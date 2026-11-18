@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+*.png
+*.jpg
+*.jpeg
+*.JPG
+*.PNG
+*.mp4
+*.mov
+data/
+venv/
