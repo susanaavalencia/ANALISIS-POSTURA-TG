@@ -11,3 +11,4 @@ desktop.ini
 *.mov
 data/
 venv/
+static/
