@@ -36,14 +36,15 @@ def calcular_score_y_calidad_ml(
     """
     indicadores = extraer_indicadores_video(df_pivot_rep, ejercicio, vista)
 
-    print("\n--- DIAGNÓSTICO INDICADORES (CURL LATERAL) ---")
-    for _, row in modelo_referencia.iterrows():
-        p = row["Parametro"]
-        val = indicadores[p]
-        ok = row["Limite inferior"] <= val <= row["Limite superior"]
-        print(
-            f"  {p}: {val:.3f} | Ideal: {row['Valor ideal']:.3f} [{row['Limite inferior']:.3f}, {row['Limite superior']:.3f}] -> {'OK' if ok else 'FALLA'}"
-        )
+    # print("\n--- DIAGNÓSTICO INDICADORES (CURL LATERAL) ---")
+    # for _, row in modelo_referencia.iterrows():
+    #    p = row["Parametro"]
+    #    val = indicadores[p]
+    #    ok = row["Limite inferior"] <= val <= row["Limite superior"]
+    #    print(
+    #        f"  {p}: {val:.3f} | Ideal: {row['Valor ideal']:.3f} [{row['Limite inferior']:.3f}, {row['Limite superior']:.3f}] -> {'OK' if ok else 'FALLA'}"
+
+    #    )
 
     feature_vector = []
     cumple_total = 0
