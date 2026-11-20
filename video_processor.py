@@ -463,3 +463,4 @@ def detectar_repeticiones(df_raw, ejercicio):
         repeticiones.append((frame_inicio, frame_fin))
 
     return repeticiones
+
